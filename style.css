@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    color: #4F5665;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #0B132A;
+}
+h2 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+}
+p {
+    line-height: 30px;
+}
+img {
+    width: 100%;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.button {
+    color: #F53838;
+    border: 2px solid #F53838;
+    border-radius: 50px;
+    padding: 13px 62px;
+    font-weight: 700;
+}
+.button:hover {
+    color: #fff;
+    background-color: #F53838;
+    box-shadow: 0 30px 27px -15px rgba(245, 56, 56, 0.35);
+}
+.big-button {
+    color: #fff;
+    background-color: #F53838;
+    border-radius: 10px;
+    padding: 18px 78px;
+    font-weight: 700;
+    border: 2px solid transparent;
+}
+.big-button:hover {
+    color: #F53838;
+    background-color: transparent;
+    border: 2px solid #F53838;
+    box-shadow: 0 30px 27px -15px rgba(245, 56, 56, 0.35);
+}
+
+.container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+}
+.section-header {
+    max-width: 555px;
+    text-align: center;
+    margin: auto;
+}
+.button, 
+.big-button,
+.main-menu ul li a,
+.header-sign-in,
+.single-plan,
+.single-review,
+.social-media-icons a,
+.footer-links a {
+    transition: all .4s ease-in-out;
+}
+
+/* Common CSS */
+
+
+/* 
+============================
+Header Section
+============================
+*/
+.header-wraper {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    align-items: center;
+}
+.main-menu ul {
+    display: flex;
+    gap: 5px;
+}
+.main-menu ul li a {
+    padding: 8px 15px;
+}
+.main-menu ul li a:hover,
+.header-sign-in:hover {
+    color: #F53855;
+}
+.header-sign-in {
+    color: #0B132A;
+    font-weight: 500;
+    margin-right: 5px;
+    padding: 8px 15px;
+}
+.header-sign-up {
+    border: 1px solid #F53838;
+    padding: 13px 45px;
+    font-weight: 500;
+}
+
+/* 
+============================
+Hero Section
+============================
+*/
+.hero-wraper {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-content {
+    flex-basis: 48%;
+}
+.hero-content h1 {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.hero-content h1 span {
+    font-weight: 700;
+    color: #0B132A;
+}
+.hero-content p {
+    margin-bottom: 50px;
+}
+.hero-content p span {
+    font-weight: 500;
+}
+.hero-img {
+    flex-basis: 48%;
+    margin-right: -60px;
+}
+
+/* 
+============================
+About Section
+============================
+*/
+.users-information {
+    display: flex;
+    padding: 38px 0;
+    border-radius: 10px;
+    box-shadow: 0 20px 57px -30px rgba(13,16,37,0.2);
+}
+.users,
+.location,
+.servers {
+    display: flex;
+    gap: 36px;
+    flex-basis: 33.33%;
+    justify-content: center;
+    padding: 30px 0;
+    border-right: 2px solid #EEEFF2;
+}
+.servers {
+    border: none;
+}
+.information-icons i {
+    color: #F53838;
+    background-color: #FFECEC;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.count h4 {
+    font-size: 25px;
+    line-height: 30px;
+}
+.count p {
+    font-size: 20px;
+}
+
+/* 
+============================
+Features Section
+============================
+*/
+.features-wraper {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.features-img {
+    flex-basis: 50%;
+    padding: 0 30px;
+}
+.features-content {
+    padding-left: 130px;
+    padding-top: 50px;
+}
+.features-pera {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.fecility {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.fecility img {
+    width: 20px;
+    height: 20px;
+}
+.fecility p {
+    font-size: 14px;
+}
+
+/* 
+============================
+Pricing Section
+============================
+*/
+.pricing-section {
+    padding: 80px 0;
+    background-color: #FBFBFB;
+}
+.pricing-header {
+    margin-bottom: 60px;
+}
+.pricing-header h2 {
+    margin-bottom: 16px;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+}
+.single-plan {
+    background-color: #fff;
+    border: 2px solid #DDDDDD;
+    padding: 70px 60px 50px 60px;
+    text-align: center;
+    flex-basis: 30%;
+    border-radius: 10px;
+    min-height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.single-plan:hover {
+    border: 2px solid #F53838;
+    transform: scale(1.05);
+    box-shadow: 0 40px 40px -20px rgba(13,16,37,0.2);
+}
+.plan-top img {
+    width: 145px;
+}
+.plan-top h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 30px 0;
+}
+.plan-fecility {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.plan-fecility img {
+    width: 14px;
+}
+.plan-fecility p {
+    font-size: 14px;
+}
+.plan-bottom h5 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.plan-bottom h5 span {
+    font-weight: 400;
+}
+
+/* 
+============================
+Network Section
+============================
+*/
+.network-section {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.network-header {
+    margin-bottom: 150px;
+}
+.network-header h2 {
+    margin-bottom: 20px;
+}
+.network-header p span {
+    font-weight: 500;
+}
+
+/* 
+============================
+Logo Section
+============================
+*/
+.logo-wraper {
+    display: flex;
+    justify-content: space-between;
+}
+.logo-wraper img {
+    max-width: 190px;
+}
+
+/* 
+============================
+Testimonial Section
+============================
+*/
+.testimonial-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.testimonial-header {
+    padding-bottom: 60px;
+}
+.testimonial-header h2 {
+    margin-bottom: 20px;
+}
+.testimonial-wraper {
+    display: flex;
+    justify-content: space-between;
+}
+.single-review {
+    border: 2px solid #DDDDDD;
+    flex-basis: 31%;
+    border-radius: 10px;
+    padding: 30px;
+}
+.single-review:hover {
+    border: 2px solid #F53838;
+    box-shadow: 0 40px 40px -20px rgba(13,16,37,0.2);
+}
+.review-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.reviewer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.reviewer img {
+    width: 50px;
+}
+.reviewer-name h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.reviewer-name p {
+    font-size: 14px;
+}
+.rating p i {
+    color: #FEA250;
+    padding-left: 10px;
+}
+.review-body p {
+    color: #0B132A;
+}
+
+/* 
+============================
+Subscribe Section
+============================
+*/
+.subscribe-wraper {
+    padding: 58px 70px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 20px 57px -10px rgba(13,16,37,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -130px;
+    position: relative;
+    margin-top: 50px;
+}
+.subscribe-title {
+    width: 400px;
+}
+.subscribe-title h2 {
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+.subscribe-btn a {
+    padding: 17px 65px;
+}
+
+/* 
+============================
+Footer Section
+============================
+*/
+.footer {
+    padding-top: 200px;
+    padding-bottom: 100px; 
+    background-color: #F8F8F8;
+}
+.footer-wraper {
+    display: flex;
+}
+.footer-left {
+    flex-basis: 50%;
+    padding-right: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-left img {
+    width: 150px;
+}
+.footer-left p span {
+    font-weight: 500;
+}
+.social-media-icons {
+    display: flex;
+    gap: 20px;
+}
+.social-media-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #fff;
+    width: 34px;
+    height: 34px;
+    box-shadow: 2px 2px 10px rgba(13,16,37,0.3);
+}
+.social-media-icons a:hover {
+    box-shadow: 2px 2px 10px rgba(245, 56, 56, 0.3);
+    transform: scale(1.1);
+}
+.social-media-icons a i {
+    color: #F53838;
+}
+.copyright,
+.copyright span {
+    color: #AFB5C0;
+}
+.footer-menu {
+    flex-basis: 20%;
+}
+.footer-menu h5 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links a {
+    line-height: 30px;
+}
+.footer-links a:hover {
+    color: #F53838;
+}
